@@ -72,6 +72,7 @@
 
 [![Product Name Screen Shot][product-screenshot]]()
 
+This project is a starter app to help you get started with creating a restaurants app using the Yelp API
 I started this project to practice developing. By no means is this project polished or finished. Feel free to build upon it.
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
