@@ -1,9 +1,15 @@
-import { HeaderTitle } from '@react-navigation/stack'
 import React from 'react'
-import { View, Text, StyleSheet, FlatList } from 'react-native'
-import ResultsDetail from './ResultsDetail'
+import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native'
+import ResultsDetail from '../components/ResultsDetail'
+import { useNavigation } from '@react-navigation/native';
 
-const ResultsList = ({ title, results }) => {
+const ResultsList = ({ title, results}) => {
+    const navigation = useNavigation();
+
+    if (!results.length) {
+        return null
+    }
+
     return (
     <View style={styles.container}>
         <Text style={styles.title}>{title}</Text>
@@ -12,7 +18,11 @@ const ResultsList = ({ title, results }) => {
             data={results}
             keyExtractor={(result) => result.id}
             renderItem={({ item }) => {
-                return <ResultsDetail result={item}/>
+                return (
+                    <TouchableOpacity onPress={() => navigation.navigate("Results", { id: item.id})}>
+                    <ResultsDetail result={item}/>
+                    </TouchableOpacity>
+                )
             }}
             showsHorizontalScrollIndicator={false}
         />

@@ -36,7 +36,7 @@
   <h3 align="center">Food-Yelp-App</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Find delicious restaurants using Yelp API.
     <br />
     <a href="https://github.com/tayek333/Food-Yelp-App"><strong>Explore the docs »</strong></a>
     <br />
@@ -59,7 +59,6 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -71,36 +70,27 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]()
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
+I started this project to practice developing. By no means is this project polished or finished. Feel free to build upon it.
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [React-Native](https://reactnative.dev/)
+* [Expo](https://expo.io/)
+* [Axios](https://github.com/axios/axios)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+There are a few thing you will need.
 * npm
 ```sh
 npm install npm@latest -g
@@ -108,30 +98,30 @@ npm install npm@latest -g
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API Key at [https://www.yelp.com/developers/v3/manage_app](https://www.yelp.com/developers/v3/manage_app)
 2. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/tayek333/Food-Yelp-App
 ```
 3. Install NPM packages
+* Axios
 ```sh
-npm install
+npm install axios
 ```
-4. Enter your API in `config.js`
+* React Navigation
+```sh
+npm install @react-navigation/native
+```
+```sh
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
+```sh
+npm install @react-navigation/stack
+```
+4. Enter your API in `yelp.js`
 ```JS
-const API_KEY = 'ENTER YOUR API';
+Authorization: 'Bearer [YOUR API KEY HERE]'
 ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -163,28 +153,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Tarek Bukhari - [@tarek_bukhari](https://www.instagram.com/tarek_bukhari/) - tarekbukhari123@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/tayek333/Food-Yelp-App](https://github.com/tayek333/Food-Yelp-App)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
+* [React Navigation](https://reactnavigation.org/)
+* [Axios](https://github.com/axios/axios)
+* [Expo Vector Icons](https://github.com/expo/vector-icons)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
